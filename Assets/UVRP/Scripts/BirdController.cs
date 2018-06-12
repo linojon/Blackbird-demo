@@ -23,7 +23,7 @@ public class BirdController : MonoBehaviour
         if (animIndex != prevIndex && animIndex > 0 && animIndex < targets.Count)
         {
             prevIndex = animIndex;
-//bird.gameObject.SendMessage("FlyToTarget", targets[animIndex].transform.position);
+            bird.gameObject.SendMessage("FlyToTarget", targets[animIndex].transform.position);
         }
     }
 }
